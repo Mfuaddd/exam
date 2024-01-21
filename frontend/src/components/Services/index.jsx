@@ -28,7 +28,7 @@ function Services() {
           </div>
           <div className="services-card">
             <div className="services-card__icon">
-              <i className="fa-solid fa-mug-saucer"></i>
+              <i className="fa-solid fa-bowl-food"></i>
             </div>
             <div className="services-card__title">Brunch</div>
             <div className="services-card__text">
