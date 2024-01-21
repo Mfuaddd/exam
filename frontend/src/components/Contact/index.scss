@@ -1,0 +1,90 @@
+.contact {
+  background-image: url("https://preview.colorlib.com/theme/pulse/img/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 100px;
+
+  &__content {
+    background-color: white;
+    padding: 40px 100px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    text-align: center;
+    font-size: 65px;
+    color: #8a8a8a;
+  }
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-wrap: nowrap;
+
+    &__line {
+      width: 30%;
+      margin: 10px;
+      height: 2px;
+      background-color: #ffc515;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__inputs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      input {
+        padding: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #eff4f6;
+      }
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      padding: 20px;
+      width: 100%;
+      background-color: #eff4f6;
+      border: none;
+      outline: none;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    &__content {
+      padding: 20px;
+    }
+    &__form__inputs{
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    button {
+      padding: 20px 30px;
+      background-color: #ffc515;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+    }
+  }
+}

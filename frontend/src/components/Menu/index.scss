@@ -1,0 +1,120 @@
+.menu {
+  background-image: url("https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+
+  &__icon {
+    text-align: center;
+    font-size: 65px;
+    color: white;
+  }
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-wrap: nowrap;
+
+    &__line {
+      width: 30%;
+      margin: 10px;
+      height: 2px;
+      background-color: #ffc515;
+    }
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+
+    li {
+      cursor: pointer;
+    }
+
+    li:first-of-type {
+      color: #ffc515;
+    }
+  }
+
+  &__body {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    &__body {
+      grid-template-columns: 1fr;
+    }
+    &__category {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-card {
+    display: flex;
+
+    &__body {
+      flex-grow: 1;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      color: #7e7e7e;
+      font-size: 12px;
+    }
+
+    &__price {
+      font-size: 17px;
+      font-weight: bold;
+      color: white;
+    }
+
+    &__line {
+      flex-grow: 1;
+      height: 1px;
+      border-bottom: 2px dotted #7e7e7e;
+      margin: 0 10px;
+    }
+
+    &__control {
+      padding: 0 5 px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      color: white;
+      i {
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

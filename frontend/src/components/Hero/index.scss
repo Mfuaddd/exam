@@ -1,0 +1,39 @@
+.hero {
+
+  &__slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-card {
+    text-align: end;
+    color: white;
+    &__title {
+      font-size: 110px;
+      font-weight: bold;
+      color: white;
+      span{
+        color: #ffc515;
+      }
+    }
+
+    &__by {
+      font-weight: bold;
+    }
+
+    @media only screen and (max-width: 900px) {
+      &__title {
+        font-size: 32px;
+      }
+
+    }
+  }
+}
