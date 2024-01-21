@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 30px;
+      gap: 15px;
       input {
         padding: 20px;
         width: 100%;
@@ -73,7 +73,6 @@
     }
     &__form__inputs{
       flex-wrap: wrap;
-      gap: 15px;
     }
   }
 
